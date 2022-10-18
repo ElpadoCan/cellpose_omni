@@ -4,7 +4,7 @@ from setuptools import setup
 install_deps = ['numpy>=1.22.4', 'scipy', 'natsort',
                 'tifffile', 'tqdm', 'numba', 
                 'torch>=1.6',
-                'opencv-python==4.5.5.64', # headless not working with pyinstaller 
+                'opencv-python-headless==4.5.5.64', 
                 'fastremap', 'imagecodecs'
                 ]
 
@@ -39,6 +39,9 @@ distributed_deps = [
         'scikit-learn',
         ]
 
+acdc_deps = install_deps.copy()
+acdc_deps.extend(omni_deps)
+
 # conda install numba numpy tifffile imagecodecs scipy fastremap pyqtgraph
 #  pip install opencv-python==4.5.3.56 
 
@@ -56,7 +59,7 @@ with open("README.md", "r") as fh:
     
     
 setup(
-    name="cellpose-omni",
+    name="cellpose-omni-acdc",
     license="BSD",
     author="Kevin Cutler",
     author_email="kevinjohncutler@outlook.com",
@@ -70,7 +73,7 @@ setup(
     ],
     packages=setuptools.find_packages(),
     use_scm_version=True,
-    install_requires = install_deps,
+    install_requires = acdc_deps,
     tests_require=[
       'pytest'
     ],
