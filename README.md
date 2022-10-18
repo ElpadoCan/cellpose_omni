@@ -1,3 +1,7 @@
+# Cellpose backend for Omnipose in Cell-ACDC
+This is a fork of the Cellpose used by Omnipose where we removed GUI dependencies to **allow installation of Omnipose into Cell-ACDC**. 
+See below the original README.
+
 # <b>Cellpose backend for Omnipose</b>
 
 This fork of Cellpose continues the generalizations first introduced by Omnipose. Because Omnipose will not be incorporated into Cellpose 2.0, this fork will continue to be maintained by the author of Omnipose ([@kevinjohncutler](https://github.com/kevinjohncutler)), with the current goal of updating to support Cellpose 2.0 when it is released and if it shows substantial improvements. For now, I will be providing addtional updates and bugfixes based on Cellpose 1.0 from January 2022. This fork will remain backwards-compatible with Cellpose. See the main Cellpose repo for basic Cellpose usage, and the Omnipose repo for Omnipose-specific settings. 
