@@ -61,8 +61,8 @@ with open("README.md", "r") as fh:
 setup(
     name="cellpose-omni-acdc",
     license="BSD",
-    author="Kevin Cutler",
-    author_email="kevinjohncutler@outlook.com",
+    author="Francesco Padovani",
+    author_email="padovaf@tcd.ie",
     description="cellpose fork developed for omnipose",
     long_description=long_description,
     long_description_content_type="text/markdown",
